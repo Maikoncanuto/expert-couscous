@@ -1,0 +1,31 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "node ./src/app.js",
+    "start:prd": "node dist/backend.bundle.js",
+    "build:prd": "webpack --config ./webpack.config.js --mode=production"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0",
+    "helmet": "^5.1.0",
+    "http-proxy-middleware": "^2.0.6",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0",
+    "babel-loader": "^8.2.5"
+  }
+}
